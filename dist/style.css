@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-  font-family: 'BradleyHand', 'Lucinda Handwriting', 'Brush Script';
+  font-size: 40pt;
+  color: darkblue;
 }
 
 p {
