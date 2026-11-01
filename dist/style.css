@@ -13,3 +13,7 @@ p {
   font-size: 14pt;
   color:crimson;
 }
+
+li {
+  margin-bottom: 15px;
+}
