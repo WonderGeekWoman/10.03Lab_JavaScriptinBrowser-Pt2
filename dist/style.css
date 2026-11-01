@@ -1,13 +1,22 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("background-paper.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("background-paper.jpg");
   background-repeat: no-repeat;
+  background-position: cover;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
+  min-width: max-content;
+  padding: 10px;
 }
 
 h1 {
@@ -28,14 +37,14 @@ li {
   margin-bottom: 15px;
 }
 
-#newTask {
+#new-task {
   border: 2px solid rgb(82, 1, 17);
   border-radius: 4px;
   padding: 5px;
   transition: border-color 0.3s ease;
 }
 
-#addBtn {
+#add-btn {
   background-color:antiquewhite;
   color:rgb(82, 1, 17);
   border-radius: 4px;
@@ -44,11 +53,11 @@ li {
   cursor: pointer;
 }
 
-#addBtn:hover {
+#add-btn:hover {
     background-color:rgb(44, 165, 115);
 }
 
-.doneBtn {
+.done-btn {
   background: none;
   border: none;
   padding: 0;
@@ -58,6 +67,6 @@ li {
   margin-left: 10px;
 }
 
-.doneBtn:hover {
+.done-btn:hover {
   color:deeppink;
 }
