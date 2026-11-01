@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", domLoaded);
 // This function is called when the Add button is clicked or Enter is pressed.
 function addBtnClick() {
     let newTaskInput = document.getElementById("new-task");
-    let newTaskText = newTaskInput.value;
+    let newTaskText = newTaskInput.value.trim();
     if (newTaskText != "") {
         addTask(newTaskText);
         newTaskInput.value = "";
@@ -29,6 +29,8 @@ function addBtnClick() {
         document.getElementById("error-text").textContent = "";
     } else {
         document.getElementById("error-text").textContent = "Please enter a task";
+        newTaskInput.value = "";
+        newTaskInput.focus();
     }
 }
 
