@@ -15,20 +15,13 @@ document.addEventListener("DOMContentLoaded", domLoaded);
 
 // This function will be called when the Add button is clicked
 function addBtnClick() {
-    let toDoInput = document.getElementById(toDo);
-    toDoInput
+    let newTaskInput = document.getElementById("newTask");
+    let newTaskText = newTaskInput.value;
+    addTask(newTaskText);
 }
-// This function will be called when the link is clicked
-// It shows an alert with a message
-// Ensure the DOM is fully loaded before attaching the event listener
-document.addEventListener("DOMContentLoaded", function() {
-    const link = document.getElementById("hello-link");
-    if (!link) {
-        console.error("Link with ID 'hello-link' not found.");
-        return;
-    }
-    link.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        sayHello();
-    });
-});
+
+//This function will add the text of the entered task to the list
+function addTask() {
+    let addItem = document.createElement("li");
+    addItem.innerHTML = `<span class="taskText">${addItem}</span><button class="doneBtn>&#10006;</button>`;
+}

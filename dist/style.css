@@ -17,3 +17,17 @@ p {
 li {
   margin-bottom: 15px;
 }
+
+.doneBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  color:rgb(99, 99, 99);
+  font-size: 14pt;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.doneBtn:hover {
+  color:deeppink;
+}
