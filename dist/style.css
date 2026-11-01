@@ -13,10 +13,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0;
+  justify-content: flex-start;
   min-width: max-content;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+}
+
+#todo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -32,8 +43,9 @@ p {
 }
 
 li {
-  font-weight: bolder;
   color:rgb(82, 1, 17);
+  width: 100%;
+  word-break: break-word;
   margin-bottom: 15px;
 }
 
